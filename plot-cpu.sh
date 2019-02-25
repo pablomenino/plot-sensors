@@ -8,6 +8,10 @@ duration="$1"  #duration format is  ndnhnmns where n is some number and d is day
 # Based on https://askubuntu.com/questions/96957/where-can-i-find-the-log-file-of-my-system-temperature
 
 step="$2"
+
+echo "Plot CPU Temps:";
+echo "";
+
 #----------------------------------------------------------------------
 #starting time taken as current
 dt=$(date '+%Y-%m-%dT%H:%M:%S');
@@ -35,6 +39,9 @@ while [  $nms -lt $ntimes ];  do
         rm plot_cpu_temp.txt
 done
 
+if [ ! -d "plot-images" ]; then
+  mkdir plot-images
+fi
 
 #plotting using gnuplot to get a beautiful plot. 
 day=86400 #different x-axis for different  time duration. A day = 86400 seconds
@@ -43,9 +50,9 @@ fcode=$(date "+%Y-%m-%d_%H%M%S") # generate a time stamp
 #echo $fcode
 if [[ "$b" > "$day" ]]
 then
-        gnuplot -e "filename='plot_cpu_$fcode'" plot_day_cpu
+        gnuplot -e "filename='plot-images/plot_cpu_$fcode'" plot_day_cpu
 else
-        gnuplot -e "filename='plot_cpu_$fcode'" plot_time_cpu
+        gnuplot -e "filename='plot-images/plot_cpu_$fcode'" plot_time_cpu
 fi
 
 #end-of-script---------------------------------------------------------
