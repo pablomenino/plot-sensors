@@ -1,6 +1,6 @@
 ### GitIgnore file ###
 
-plot-images/
+plot-images/*
 plot_cpu_temp.txt
 plot_gpu_temp.txt
 plot_cpu_t_log.txt
