@@ -1,5 +1,11 @@
 ### GitIgnore file ###
 
+plot-images/
+plot_cpu_temp.txt
+plot_gpu_temp.txt
+plot_cpu_t_log.txt
+plot_gpu_t_log.txt
+
 # Cache files
 .temp/
 .libs/
