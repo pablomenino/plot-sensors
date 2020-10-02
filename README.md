@@ -2,8 +2,8 @@
 <p align="center">Graph Thermal Sensor Data with BASH and GNUPlot</p>
 
 <p align="center">
-<a href="https://github.com/pablomenino/plot-sensors/releases"><img src="https://img.shields.io/github/release/pablomenino/plot-sensors.svg"></a>
-<a href="./LICENSE"><img src="https://img.shields.io/github/license/pablomenino/plot-sensors.svg"></a>
+<img src="https://img.shields.io/github/release/pablomenino/plot-sensors.svg">
+<img src="https://img.shields.io/github/license/pablomenino/plot-sensors.svg">
 </p>
 
 **Graph Thermal Sensor Data with BASH and GNUPlot**
